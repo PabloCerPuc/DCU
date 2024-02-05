@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Clases</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Nunito+Sans:opsz,wght@6..12,900&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #DAE8FC;
+            font-family: 'Lato', Helvetica, sans-serif;
+            padding-bottom: 50px; /* Espacio para el pie de página */
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 45px;
+            font-weight: bold;
+            flex-grow: 1;
+            text-align: center;
+            margin-top: 20px;
+            font-family: 'Lato', sans-serif;
+            font-size: 50pt;
+        }
+        .espacioSemana {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .tabla {
+            margin-top: 20px;
+        }
+        .cabecera {
+            background-color: #e9ecef;
+            border-bottom: 2px solid #dee2e6;
+            padding: 10px 0;
+            font-weight: bold;
+        }
+        .class-cell {
+            padding: 10px;
+            border: 1px solid #dee2e6;
+        }
+        .dia {
+            font-weight: bold;
+        }
+        .time-slot {
+            background-color: #fdfdfe;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .asignatura {
+            padding: 8px;
+            margin-bottom: 4px;
+            border-radius: 4px;
+        }
+        #btnHome{
+            background-color: #DAE8FC;
+            border: none;
+            padding-top: 20px;  
+        }
+        #volver {
+            height: 75px; /* Ajusta según sea necesario */
+            
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header"> 
+        <button id="btnHome">
+            <a href="ventanaInicio.html"> <img src="imagenes/home.png" id="volver"> </a>
+         </button>
+        <h1>RESERVA DE CLASES</h1>
+    </div>
+    
+    <hr>
+    <div class="espacioSemana">
+        <button class="btn btn-secondary">Semana Anterior</button>
+        <h3 id="fechaSemana">SEMANA 15/02</h3>
+        <button class="btn btn-secondary">Semana Siguiente</button>
+    </div>
+    <div class="tabla">
+        <!-- Encabezados de los días de la semana -->
+        <div class="row cabecera">
+            <div class="col dia">Lunes</div>
+            <div class="col dia">Martes</div>
+            <div class="col dia">Miércoles</div>
+            <div class="col dia">Jueves</div>
+            <div class="col dia">Viernes</div>
+        </div>
+        <!-- Franja horaria de 16:00 a 17:00 -->
+        <div class="row time-slot">
+            <!-- Lunes -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #FADBD8;">16:00-17:00<br>Lengua Castellana</div>
+            </div>
+            <!-- Martes -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #D6EAF8;">16:00-17:00<br>Historia de España</div>
+            </div>
+            <!-- Miércoles -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #D1F2EB;">16:00-17:00<br>Matemáticas</div>
+            </div>
+            <!-- Jueves -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #D1F2EB;">16:00-17:00<br>Matemáticas</div>
+            </div>
+            <!-- Viernes -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #FCF3CF;">16:00-17:00<br>Inglés</div>
+            </div>
+        </div>
+        <!-- Franja horaria de 17:00 a 18:00 -->
+        <div class="row time-slot">
+            <!-- Lunes -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #D1F2EB;">17:00-18:00<br>Matemáticas</div>
+            </div>
+            <!-- Martes -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #A9DFBF;">17:00-18:00<br>Biología</div>
+            </div>
+            <!-- Miércoles -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #FCF3CF;">17:00-18:00<br>Inglés</div>
+            </div>
+            <!-- Jueves -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #D6EAF8;">17:00-18:00<br>Historia de España</div>
+            </div>
+            <!-- Viernes -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #D6EAF8;">17:00-18:00<br>Historia de España</div>
+            </div>
+        </div>
+        <!-- Franja horaria de 18:00 a 19:00 -->
+        <div class="row time-slot">
+            <!-- Lunes -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #FCF3CF;">18:00-19:00<br>Inglés</div>
+                
+            </div>
+            <!-- Martes -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #FADBD8;">18:00-19:00<br>Lengua Castellana</div>
+            </div>
+            <!-- Miércoles -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #A9DFBF;">18:00-19:00<br>Biología</div>
+            </div>
+            <!-- Jueves -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #FCF3CF;">18:00-19:00<br>Inglés</div>
+            </div>
+            <!-- Viernes -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #FADBD8;">18:00-19:00<br>Lengua Castellana</div>
+            </div>
+        </div>    
+
+          <!-- Franja horaria de 19:00 a 20:00 -->
+          <div class="row time-slot">
+            <!-- Lunes -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #FADBD8;">19:00-20:00<br>Lengua Castellana</div>
+            </div>
+            <!-- Martes -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #D6EAF8;">19:00-20:00<br>Historia de España</div>
+            </div>
+            <!-- Miércoles -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #D1F2EB;">19:00-20:00<br>Matemáticas</div>
+            </div>
+            <!-- Jueves -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #D1F2EB;">19:00-20:00<br>Matemáticas</div>
+            </div>
+            <!-- Viernes -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #FCF3CF;">19:00-20:00<br>Inglés</div>
+            </div>
+        </div>
+
+         <!-- Franja horaria de 20:00 a 21:00 -->
+        <div class="row time-slot">
+            <!-- Lunes -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #FCF3CF;">20:00-21:00<br>Inglés</div>
+                
+            </div>
+            <!-- Martes -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #FADBD8;">20:00-21:00<br>Lengua Castellana</div>
+            </div>
+            <!-- Miércoles -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #A9DFBF;">20:00-21:00<br>Biología</div>
+            </div>
+            <!-- Jueves -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #FCF3CF;">20:00-21:00<br>Inglés</div>
+            </div>
+            <!-- Viernes -->
+            <div class="col class-cell">
+                <div class="asignatura" style="background-color: #FADBD8;">20:00-21:00<br>Lengua Castellana</div>
+            </div>
+        </div>  
+    </div>        
+</div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Historia de España</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Nunito+Sans:opsz,wght@6..12,900&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #DAE8FC;
+            font-family: 'Lato', Helvetica, sans-serif;
+            font-weight: bold;
+            padding-bottom: 50px; 
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 50pt;
+            font-weight: bold;
+            flex-grow: 1;
+            text-align: center;
+            margin-top: 20px;
+            font-family: 'Lato', sans-serif;
+            
+        }
+        .navbar{
+            background-color: #DAE8FC;
+            font-weight: bolder;
+        }
+        #logo{
+            height: 65px;
+        }
+        h2{
+            font-size: 30pt;
+            font-family: 'Lato', sans-serif;
+        }
+        h3{
+            font-size: 20pt;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link:focus {
+            color: #090808 !important;
+        }
+        .nav-link {
+            font-size: 26px;
+            font-weight: 900;
+            font-family: 'Lato';
+            
+        }
+        
+        #divscontenido{
+            background-color: lightgray;
+        }
+        #btnHome{
+            background-color: #DAE8FC;
+            border: none;
+            padding-top: 20px;  
+            
+        }
+        #volver {
+            height: 75px;
+            
+        }
+        nav{
+            border-radius: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"> 
+            <button id="btnHome">
+                <a href="ventanaInicio.html"> <img src="imagenes/home.png" id="volver"> </a>
+             </button>
+            <h1>RECURSOS</h1>
+            <div style="width: 38px;"> <!-- Espacio en blanco para centrar el título cuando el botón no está visible --> </div>
+        </div>
+        <hr>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mr-auto">
+                
+                   
+                    <a class="nav-item nav-link active" href="#" id="linkhist">Historia de España</a>
+                      
+                  
+                    <a class="nav-item nav-link" href="#">Biología</a>
+                  
+                    <a class="nav-item nav-link" href="#">Lengua</a>
+                
+                    <a class="nav-item nav-link" href="#">Matemáticas</a>
+                 
+                    <a class="nav-item nav-link" href="#">Latin</a>
+                 
+                    <a class="nav-item nav-link" href="#">Griego</a>
+                 
+                    <a class="nav-item nav-link" href="#">Economia</a>
+                 
+                
+              </div>
+            </div>
+          </nav>
+    <div class="container mt-3">
+        <div class="row">
+           
+            <div class="col-md-9">
+                <div class="" >
+                    <h2 class="text-center">HISTORIA DE ESPAÑA</h2>
+                    <div class="mt-3 p-2 border rounded" id="divscontenido">
+                        <h3>Tutoriales</h3>
+                        <div class=" rounded m-2 p-2">
+                            <li><a href="#" style="text-decoration: underline;">La España del Antiguo Régimen</a></li>
+                            <li><a href="#" style="text-decoration: underline;">La crisis del Antiguo Régimen en España</a></li>
+                            <li><a href="#" style="text-decoration: underline;">El Imperialismo</a></li>
+                        </div>
+                        
+                    </div>
+
+                    <div class="mt-3 p-2 border rounded" id="divscontenido">
+                        <h3>Ejercicios</h3>
+                        <div class="text-white rounded m-2 p-2">   
+                            <a href="#" style="text-decoration: underline;">Dificultad baja</a>                       
+                        </div>
+                        <div class="text-white rounded m-2 p-2">
+                            <a href="#" style="text-decoration: underline;">Dificultad media</a>
+                            
+                        </div>
+                        <div class="text-white rounded m-2 p-2">
+                            <a href="#" style="text-decoration: underline;">Dificultad alta</a>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+    
+
+            <div class="col-md-3">
+                <div class="d-flex flex-column h-100">
+                    <div class="border rounded flex-grow-1" style="background-color: white;">
+                        <div id="chatMessages" class="overflow-auto p-3 d-flex flex-column justify-content-end" style="height: 400px;">
+                            <div class="mb-3">
+                                <div class="p-2 border rounded bg-light">
+                                    <p class="m-0"><strong>Alumno:</strong> Profe tengo una duda sobre uno de los ejercicios.</p>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="p-2 border rounded bg-secondary">
+                                    <p class="m-0"><strong>Profesor:</strong> Dime, ¿de qué se trata?</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+          
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Escribe un mensaje...">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button">Enviar</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

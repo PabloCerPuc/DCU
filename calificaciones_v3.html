@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="b2.jpg"> 
+    <title>Reserva de Clases</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Nunito+Sans:opsz,wght@6..12,900&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #DAE8FC;
+            font-family: 'Lato', Helvetica, sans-serif;
+            padding-bottom: 50px; /* Espacio para el pie de página */
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 45px;
+            font-weight: bold;
+            flex-grow: 1;
+            text-align: center;
+            margin-top: 20px;
+            font-family: 'Lato', sans-serif;
+            font-size: 50pt;
+        }
+        
+        .anyo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .cabecera {
+            background-color: #e9ecef;
+            border-bottom: 2px solid #dee2e6;
+            padding: 10px 0;
+            font-weight: bold;
+        }
+        .navigation {
+            list-style: none;
+            margin-top: 20px;
+            padding: 2px;
+            padding-right: 30px;
+            padding-left: 30px;
+            font-style:italic;
+            background-color: #b4bbc3;
+            display: flex;
+            border-radius: 5px;
+            justify-content: space-between; 
+
+        }
+        .navigation li a {
+            display: block;
+            padding: 10px; 
+            color: inherit;
+            text-decoration: none; 
+        }
+
+
+
+ 
+        .tabla table {
+            background-color: #fafafa;
+            margin-top: 50px;
+            width: 100%; 
+            max-width: 960px; 
+            margin-left: auto; 
+            margin-right: auto;
+            border-collapse: collapse; 
+            border-radius: 25px ;
+
+        }
+        .tabla tr:first-child th {
+            border-bottom: 2px solid black;
+        }
+
+        .tabla th, .tabla td {
+            text-align: left;
+            padding: 15px;
+            border-right: 2px solid black;
+
+        }
+
+     
+        .tabla th:last-child, .tabla td:last-child {
+            border-right: none;
+        }
+          
+        #btnHome{
+            background-color: #DAE8FC;
+            border: none;
+            padding-top: 20px;  
+        }
+        #volver {
+            height: 75px;
+            
+        }
+        .navbar{
+            background-color: #DAE8FC;
+            font-weight: bolder;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link:focus {
+            color: #0b0a0a !important;
+        }
+        .nav-link {
+            font-size: 26px;
+            font-weight: 900;
+            font-family: 'Lato';
+        }
+        nav{
+            border-radius: 35px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header"> 
+            <button id="btnHome">
+                <a href="ventanaInicio.html"> <img src="imagenes/home.png" id="volver"> </a>
+             </button>
+            <h1>CALIFICACIONES</h1>
+            <div style="width: 38px;"> <!-- Espacio en blanco para centrar el título cuando el botón no está visible --> </div>
+        </div>
+        
+        <hr>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mr-auto">
+                
+                   
+                    <a class="nav-item nav-link active" href="#" id="linkhist">Lengua</a>
+                      
+                  
+                    <a class="nav-item nav-link" href="#"> Biología</a>
+                  
+                    <a class="nav-item nav-link" href="#"> Historia de España</a>
+                
+                    <a class="nav-item nav-link" href="#"> Matemáticas</a>
+                 
+                    <a class="nav-item nav-link" href="#"> Latin</a>
+                 
+                    <a class="nav-item nav-link" href="#"> Griego</a>
+                 
+                    <a class="nav-item nav-link" href="#">Economia</a>
+                 
+                
+              </div>
+            </div>
+        </nav>
+        <div class="anyo">
+            <button class="btn btn-secondary" onclick="actualizarCurso(-1)">Curso anterior</button>
+            <h3 id="fechaSemana" style="font-size: larger;">Curso 2023/2024 <br> <a style="font-size: medium;"><b>Alumno/a:</b> Ana Mariana</a></h3>
+            <button class="btn btn-secondary" onclick="actualizarCurso(1)">Curso siguiente</button>
+        
+        </div>
+
+        <div class="tabla">
+            <table>
+                <tr>
+                    <th style="background-color: #dae1e8; border-radius: 10px;">EVALUACIONES</th>
+                    <th style="background-color: #dae1e8; border-radius: 10px;">NOTAS</th>
+                </tr>
+                <tr>
+                    <th>Primer Examen Parcial</th>
+                    <th>8</th>
+                </tr>
+                <tr>
+                    <th>Prueba Análisis Morfológico</th>
+                    <th>7</th>
+                </tr>
+                <tr>
+                    <th>Prueba Comentario de Texto</th>
+                    <th>6</th>
+                </tr>
+                <tr>
+                    <th>Prueba Análisis Sintáctico 1</th>
+                    <th>9</th>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    
+</body>
+</html>

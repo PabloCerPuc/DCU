@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Nunito+Sans:opsz,wght@6..12,900&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #DAE8FC;
+            font-family: 'Lato', Helvetica, sans-serif;
+            font-weight: bold;
+            padding-bottom: 50px; /* Espacio para el pie de página */
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-weight: bold;
+            flex-grow: 1;
+            text-align: center;
+            margin-top: 20px;
+            font-family: 'Lato', sans-serif;
+            font-size: 50pt;
+        }
+        #logo {
+            height: 75px;
+        }
+        .btn-primary {
+            background-color: #007BFF;
+            border-color: #007BFF;
+        }
+        .nav-link {
+            font-size: 26px;
+            font-weight: 900;
+            font-family: 'Lato';
+        }
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link:focus {
+            color: #181414 !important;
+        }
+        #btnHome{
+            background-color: #DAE8FC;
+            border: none;
+            padding-top: 20px;
+           
+            
+        }
+        #volver {
+            height: 75px; 
+            
+        }
+        nav{
+            border-radius: 35px;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"> 
+            <button id="btnHome">
+                <a href="ventanaInicio.html"> <img src="imagenes/home.png" id="volver"> </a>
+             </button>
+            <h1>TIENDA</h1>
+            <div style="width: 38px;"> <!-- Espacio en blanco para centrar el título cuando el botón no está visible --> </div>
+        </div>
+        <hr>
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mr-auto">
+                    <a class="nav-item nav-link active" href="#">Productos</a>
+                    <a class="nav-item nav-link" href="#">Categorías</a>
+                    <a class="nav-item nav-link" href="#">Favoritos</a>
+                    <a class="nav-item nav-link" href="#">Carrito</a>
+                    <a class="nav-item nav-link" href="#">Pedidos</a>
+                </div>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+        
+       
+        <div class="row">
+            
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/ingles2.jpg">
+                    <div class="card-body">
+                        <p class="card-text">Libro digital de inglés</p>
+                        <div class="card-footer">
+                            <medium class="text-muted price-centered">35€</medium>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/ingleswb.jpg">
+                    <div class="card-body">
+                        <p class="card-text">Libro ejercicios de inglés</p>
+                        <div class="card-footer">
+                            <medium class="text-muted price-centered">25€</medium>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/apuntes2.jpg">
+                    <div class="card-body">
+                        <p class="card-text">Apuntes Lengua</p>
+                        <div class="card-footer">
+                            <medium class="text-muted price-centered">10€</medium>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/estuche.jpg">
+                    <div class="card-body">
+                        <p class="card-text">Estuche</p>
+                        <div class="card-footer">
+                            <medium class="text-muted price-centered">15€</medium>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/diccionarioIngles.jpg">
+                    <div class="card-body">
+                        <p class="card-text">Diccionario Inglés</p>
+                        <div class="card-footer">
+                            <medium class="text-muted price-centered">15€</medium>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/diccionario2.jpg">
+                    <div class="card-body">
+                        <p class="card-text">Diccionario</p>
+                        <div class="card-footer">
+                            <medium class="text-muted price-centered">15€</medium>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/agenda2.jpg">
+                    <div class="card-body">
+                        <p class="card-text">Agenda Escolar</p>
+                        <div class="card-footer">
+                            <medium class="text-muted price-centered">5€</medium>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/calculadora.jpg">
+                    <div class="card-body">
+                        <p class="card-text">Calculadora</p>
+                        <div class="card-footer">
+                            <medium class="text-muted price-centered">20€</medium>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            
+        </div>
+    </div>
+</body>
+</html>
